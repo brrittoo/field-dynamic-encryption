@@ -1,0 +1,18 @@
+# Laravel & PHP
+/vendor
+.idea
+.vscode
+.DS_Store
+
+# Composer
+composer.lock
+
+# Logs
+*.log
+
+# Cache
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# OS files
+Thumbs.db
