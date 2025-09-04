@@ -1,0 +1,60 @@
+Local Development (Full Source Publish)
+
+A Laravel package for dynamically encrypting and decrypting form field names to enhance security.
+
+Install/update locally:
+composer update brrittoo/url-encoder
+
+
+✅ Changes take effect immediately.
+
+Local Development (From Git Clone)
+
+Clone outside your Laravel project:
+
+https://github.com/brrittoo/field-dynamic-encryption.git
+
+
+Add as a path repository:
+
+"repositories": [
+    {
+        "type": "path",
+        "url": "../field-dynamic-encryption",
+        "options": { "symlink": true }
+    }
+]
+
+
+Require locally:
+composer require brrittoo/field-dynamic-encryption:@dev
+Publish configuration:
+
+php artisan vendor:publish --tag=field-encryption-config
+
+
+
+✅ Symlinks the clone; changes reflect immediately.
+
+Contributing
+Fork the repository
+Create a feature branch:
+git checkout -b feature/MyFeature
+
+
+Commit changes:
+git commit -m "Add new feature"
+
+Push to your fork:
+git push origin feature/MyFeature
+
+
+Submit a Pull Request
+
+We review contributions before merging.
+
+Author
+Ataul Galib
+Email: ataul.gonigalib@gmail.com
+
+🔗 Repository: https://github.com/brrittoo/field-dynamic-encryption.git
