@@ -1,5 +1,14 @@
 # Field Dynamic Encryption for Laravel
 
+[![Latest Version](https://img.shields.io/packagist/v/brrittoo/field-dynamic-encryption.svg?style=flat-square)](https://packagist.org/packages/brrittoo/field-dynamic-encryption)
+[![Total Downloads](https://img.shields.io/packagist/dt/brrittoo/field-dynamic-encryption.svg?style=flat-square)](https://packagist.org/packages/brrittoo/field-dynamic-encryption)
+[![License](https://img.shields.io/packagist/l/brrittoo/field-dynamic-encryption.svg?style=flat-square)](https://packagist.org/packages/brrittoo/field-dynamic-encryption)
+
+[![PHP Version Require](https://img.shields.io/packagist/php-v/brrittoo/field-dynamic-encryption.svg?style=flat-square)](https://packagist.org/packages/brrittoo/field-dynamic-encryption)
+[![GitHub Issues](https://img.shields.io/github/issues/brrittoo/field-dynamic-encryption.svg?style=flat-square)](https://github.com/brrittoo/field-dynamic-encryption/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/brrittoo/field-dynamic-encryption.svg?style=flat-square)](https://github.com/brrittoo/field-dynamic-encryption/stargazers)
+
+
 A Laravel package for dynamically encrypting and decrypting form field names to enhance security.
 
 ## Installation
