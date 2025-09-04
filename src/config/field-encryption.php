@@ -39,17 +39,6 @@
 		
 		/*
 		|--------------------------------------------------------------------------
-		| Route Groups
-		|--------------------------------------------------------------------------
-		|
-		| Route groups where middleware should be automatically applied
-		| when using 'auto' registration mode
-		|
-		*/
-		'route_groups' => ['web'],
-		
-		/*
-		|--------------------------------------------------------------------------
 		| Middleware Registration
 		|--------------------------------------------------------------------------
 		|
@@ -61,4 +50,16 @@
 		|
 		*/
 		'middleware_registration' => 'auto',
+		
+		/*
+		|--------------------------------------------------------------------------
+		| Route Groups
+		|--------------------------------------------------------------------------
+		|
+		| Route groups where middleware should be automatically applied
+		| when using 'auto' registration mode
+		|
+		*/
+		'route_groups' => ['web'],
+
 	];
