@@ -19,19 +19,14 @@
 			if (method_exists($response, 'getContent')) {
 				$content = $response->getContent();
 				
-				// Replace all @field placeholders
-				$content = preg_replace_callback('/@([a-zA-Z0-9_]+)/', function ($matches) {
-					$field = $matches[1];
-					return FieldNameEncoder::encode($field);
-				}, $content);
-				
-				// Replace name attributes that use @field
+				// Only replace @field used in name or value attributes
 				$content = preg_replace_callback(
-					'/name\s*=\s*(["\']?)@([a-zA-Z0-9_]+)\1/',
+					'/(name|value)\s*=\s*(["\']?)@([a-zA-Z0-9_]+)\2/',
 					function ($matches) {
-						$quote = $matches[1] ?: '';
-						$field = $matches[2];
-						return 'name=' . $quote . FieldNameEncoder::encode($field) . $quote;
+						$attribute = $matches[1];   // name or value
+						$quote = $matches[2] ?: '';
+						$field = $matches[3];       // logical field name
+						return $attribute . '=' . $quote . FieldNameEncoder::encode($field) . $quote;
 					},
 					$content
 				);
@@ -40,5 +35,6 @@
 			}
 			
 			return $response;
+			
 		}
 	}
