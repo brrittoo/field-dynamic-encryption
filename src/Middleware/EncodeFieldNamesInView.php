@@ -16,6 +16,14 @@
 		{
 			$response = $next($request);
 			
+			
+			// Skip processing for file download responses
+			if ($response instanceof \Symfony\Component\HttpFoundation\BinaryFileResponse) {
+				return $response;
+			}
+			
+			
+			
 			if (method_exists($response, 'getContent')) {
 				$content = $response->getContent();
 				
