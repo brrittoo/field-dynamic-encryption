@@ -3,32 +3,37 @@
   "description": "Laravel package for dynamic field name encryption/decryption",
   "type": "library",
   "license": "MIT",
-  "authors": [
-	{
-	  "name": "ataul-galib",
-	  "email": "ataul.gonigalib@gmail.com"
-	}
-  ],
-  "minimum-stability": "stable",
-  "require": {
-	"php": ">=8.0",
-	"illuminate/support": "^9.0|^10.0",
-	"ext-openssl": "*"
-  },
-  "autoload": {
-	"psr-4": {
-	  "Brrittoo\\FieldDynamicEncryption\\": "src/"
-	}
-  },
-  "extra": {
-	"laravel": {
-	  "providers": [
-		"Brrittoo\\FieldDynamicEncryption\\ServiceProvider"
-	  ],
-	  "aliases": {
-		"FieldEncoder": "Brrittoo\\FieldDynamicEncryption\\Facades\\FieldEncoder"
-	  }
-	}
-  }
 
+  "authors": [
+    {
+      "name": "ataul-galib",
+      "email": "ataul.gonigalib@gmail.com"
+    }
+  ],
+
+  "require": {
+    "php": "^8.3|^8.4|^8.5",
+    "illuminate/support": "^11.0|^12.0",
+    "ext-openssl": "*"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Brrittoo\\FieldDynamicEncryption\\": "src/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Brrittoo\\FieldDynamicEncryption\\ServiceProvider"
+      ],
+      "aliases": {
+        "FieldEncoder": "Brrittoo\\FieldDynamicEncryption\\Facades\\FieldEncoder"
+      }
+    }
+  },
+
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
